@@ -1,0 +1,74 @@
+
+p, h1, h2, ol li
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+header h2
+{
+    color: #006EB6;
+    font-size: 90%;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+}
+
+.title
+{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-underline-offset: 10px;
+}
+
+.title h1, .title h2
+{
+    font-weight: normal;
+}
+
+header, footer, body
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+footer{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.list
+{
+    line-height: 1.5;
+}
+
+li
+{
+    margin-bottom: 10px;
+}
+
+
+footer img{
+    width: 150px;
+}
+
+footer
+{
+    text-align: center;
+}
+
+html
+{
+    border: solid black 1px;
+    margin: 20px;
+}
