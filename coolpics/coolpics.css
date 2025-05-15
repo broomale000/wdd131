@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+
+header {
+    width: 100%;
+    background-color: lightblue;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Mooli', sans-serif;
+}
+
+footer {
+    width: 100%;
+    background-color: lightblue;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+}
