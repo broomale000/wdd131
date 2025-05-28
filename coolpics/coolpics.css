@@ -1,46 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
  
 :root {
- --primary-color: #52489c;
- --secondary-color: #59c3c3;
- --accent-color: #f45b69;
- --text-dark: #333;
- --text-light: #ebebeb;
- --primary-font: Arial, Helvetica,sans-serif;
- --secondary-font: Mooli, san-serif;
+  --primary-color: #52489c;
+  --secondary-color: #59c3c3;
+  --accent-color: #f45b69;
+  --text-dark: #333;
+  --text-light: #ebebeb;
+  --primary-font: Arial, Helvetica,sans-serif;
+  --secondary-font: Mooli, san-serif;
  }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
  
 header {
-    background-color: darkblue;
-    text-align: center;
-    padding-bottom: 10px;
+  background-color: darkblue;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 main {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: 'Mooli', sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Mooli', sans-serif;
 }
 
 footer {
-    background-color: darkblue;
-    margin-top: 20px;
-    padding: 10px;
+  background-color: darkblue;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 footer p {
-    padding-left: 100px;
-    color: white;
+  padding-left: 100px;
+  color: white;
 }
 
 
@@ -51,42 +51,75 @@ footer p {
 }
 
 .gallery img {
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    padding: 10px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .title {
-    padding: 20px;
+  padding: 20px;
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
     
 }
 
 nav a {
-    color: white;
-    margin: 0 auto;
+  color: white;
+  margin: 0 auto;
 }
 
 header h1 {
-    color: white;
+  color: white;
 }
 
 header h3 {
-    color: white;
-    padding: 10px;
+  color: white;
+  padding: 10px;
 }
 
 .menu {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, .3);
+  opacity: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal img
+{
+  max-height: 100%;
+}
+
+#close-modal {
+  position: fixed;
+  top: 10%;
+  right: 13%;
 }
 
 @media screen and (min-width: 700px) {

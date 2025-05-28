@@ -7,14 +7,14 @@
     <meta name="author" content="Alexander B.">
     <title>Cool Pics</title>
     <link rel="stylesheet" href="coolpics.css">
-    <script src="coolpics.js"></script>
+    <script src="coolpics.js" defer></script>
 </head>
 <body>
 
     <header>
         <h1>Cool Pics 📷</h1>
         <button class="menu"><h3>Menu</h3></button>
-        <nav>
+        <nav class="navigation hide">
             <a href="#">Home</a>
             <a href="#">People</a>
             <a href="#">Places</a>
@@ -24,42 +24,48 @@
     </header>
 
     <main>
+
+            <dialog id="modal" class="modal">
+                <img src="norris-full.jpeg">
+                <button id="close-modal">Close</button>
+            </dialog>
+
         <h1 class="title">Current Work</h1>
         <section class="gallery">
-            <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+            <figure>
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
 
             <figure>  
-	            <img src="norris-sm.jpeg" alt="picture">
+	            <img class="open-modal" src="norris-sm.jpeg" alt="picture">
             </figure>
         </section>
     </main>
