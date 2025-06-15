@@ -48,3 +48,14 @@ img{
 h2{
     color: purple;
 }
+
+.skiptocontent a {
+	position: absolute;
+	top: -40px;
+	background-color: blue;
+}
+.skiptocontent a:focus {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
